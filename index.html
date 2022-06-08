@@ -13,7 +13,51 @@
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
-	<h1>Aga to głupek</h1>
+		
+			<div class="app-body">
+				<div class="app-top">
+					<h1>todo list</h1>
+					<div class="app-box-input">
+						<input type="text" id="taskID" class="task" placeholder="Wprowadź zadanie..." />
+						<button class="add-task">ADD</button>
+					</div>
+					
+				</div>
+
+				<div class="app-bottom">
+					<h2>Lista Zadań:</h2>
+					<p class="error">Wpisz treść zadania</p>
+					<div class="tasks-box">
+						<div class="task">
+							<p class="content-task">Zadanie1</p>
+							<div class="box-buttons">
+								<i class="fa-solid fa-check"></i>
+								<p class="edit">EDIT</p>
+								<i class="fa-solid fa-x"></i>
+							</div>
+						</div>
+
+						<div class="task">
+							<p class="content-task">2</p>
+							<div class="box-buttons">
+								<i class="fa-solid fa-check"></i>
+								<p class="edit">EDIT</p>
+								<i class="fa-solid fa-x"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="edit-body">
+				<h2>Edytuj zadanie:</h2>
+				<input type="text" id="edit" placeholder="Wprowadź nową treść zadania..." />
+				<div class="edit-box-buttons">
+					<button class="save">zatwierdz</button>
+					<button class="cancel">anuluj</button>
+				</div>
+			</div>
+		
 		<script src="js/main.js"></script>
 	</body>
 </html>

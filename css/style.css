@@ -9,15 +9,220 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+}
+
+.app-body {
+  width: 800px;
+  min-height: 500px;
+  border-radius: 8px;
+  -webkit-box-shadow: 3px 3px 23px 3px rgb(66, 68, 90);
+          box-shadow: 3px 3px 23px 3px rgb(66, 68, 90);
+  background-color: #fff;
+}
+
+.app-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 100vh;
-  font-family: "Montserrat", sans-serif;
-  background-color: rgb(233, 233, 233);
+  height: 200px;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 8px;
+}
+
+h1 {
+  color: white;
+  text-transform: uppercase;
+}
+
+.app-box-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
-  margin-left: -330px;
+  margin-top: 20px;
+}
+.app-box-input input {
+  width: 70%;
+  border-radius: 5px;
+  border: none;
+  text-align: left;
+  padding: 10px 20px;
+  color: rgb(66, 68, 90);
+}
+.app-box-input .add-task {
+  margin-left: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: rgb(114, 115, 128);
+  background: white;
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+}
+.app-box-input .add-task:hover {
+  background-color: rgb(90, 90, 90);
+  color: #fff;
+}
+
+.app-bottom h2 {
+  text-align: center;
+  margin-top: 15px;
+}
+.app-bottom .error {
+  letter-spacing: 1px;
+  color: red;
+  margin: 10px;
+  text-align: center;
+}
+.app-bottom .tasks-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.app-bottom .task {
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  width: 95%;
+  background-color: #f1f1f1;
+  border-radius: 7px;
+}
+.app-bottom .content-task {
+  padding: 0 20px;
+  font-weight: 200;
+  max-width: 75%;
+  overflow-wrap: break-word;
+}
+.app-bottom .box-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.app-bottom .box-buttons i {
+  margin: 0 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+.app-bottom .box-buttons .fa-check {
+  color: #6877e0;
+}
+.app-bottom .box-buttons .edit {
+  color: green;
+  cursor: pointer;
+  padding: 10px;
+}
+.app-bottom .box-buttons .fa-x {
+  color: red;
+  cursor: pointer;
+}
+
+.edit-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-shadow: 3px 3px 23px 3px rgb(66, 68, 90);
+          box-shadow: 3px 3px 23px 3px rgb(66, 68, 90);
+  border-radius: 5px;
+  width: 800px;
+  height: 250px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#323232), color-stop(40%, #3f3f3f), color-stop(150%, #1c1c1c)), -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.4)), color-stop(200%, rgba(0, 0, 0, 0.25)));
+  background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%), linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
+  background-blend-mode: multiply;
+}
+.edit-body h2 {
+  text-align: center;
+  color: white;
+}
+.edit-body input {
+  border-radius: 5px;
+  border: none;
+  text-align: left;
+  padding: 10px 20px;
+  color: rgb(66, 68, 90);
+  width: 90%;
+}
+.edit-body .edit-box-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 80%;
+}
+.edit-body button {
+  text-transform: uppercase;
+  padding: 10px 80px;
+  font-size: 16px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 1px;
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+}
+.edit-body button:hover {
+  background-color: #6d69cc;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
