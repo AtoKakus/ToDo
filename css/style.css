@@ -96,6 +96,7 @@ h1 {
   margin-top: 15px;
 }
 .app-bottom .error {
+  opacity: 0;
   letter-spacing: 1px;
   color: red;
   margin: 10px;
@@ -149,6 +150,10 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
 }
+.app-bottom .box-buttons .btntask {
+  border: none;
+  background: none;
+}
 .app-bottom .box-buttons i {
   margin: 0 5px;
   padding: 10px;
@@ -168,9 +173,7 @@ h1 {
 }
 
 .edit-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -225,4 +228,9 @@ h1 {
 .edit-body button:hover {
   background-color: #6d69cc;
   color: white;
+}
+
+.completed {
+  text-decoration: line-through;
+  font-style: italic;
 }/*# sourceMappingURL=style.css.map */
