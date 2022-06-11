@@ -18,7 +18,7 @@ body {
 	justify-content: space-around;
 	align-items: center;
 	flex-direction: column;
-	min-height: 100vh;
+	min-height: 150vh;
 	font-family: "Montserrat", sans-serif;
 	width: 100%;
 	// background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
@@ -83,13 +83,7 @@ h1 {
 		text-align: center;
 		margin-top: 15px;
 	}
-	.error{
-		opacity: 0;
-		letter-spacing: 1px;
-		color: red;
-		margin: 10px;
-		text-align: center;
-	}
+
 	.tasks-box {
 		display: flex;
 		justify-content: center;
@@ -205,6 +199,13 @@ h1 {
 	font-style: italic;
 }
 
+.error{
+	opacity: 0;
+	letter-spacing: 1px;
+	color: red;
+	margin: 10px;
+	text-align: center;
+}
 
 
 // @import "./small";

@@ -18,7 +18,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 100vh;
+  min-height: 150vh;
   font-family: "Montserrat", sans-serif;
   width: 100%;
 }
@@ -94,13 +94,6 @@ h1 {
 .app-bottom h2 {
   text-align: center;
   margin-top: 15px;
-}
-.app-bottom .error {
-  opacity: 0;
-  letter-spacing: 1px;
-  color: red;
-  margin: 10px;
-  text-align: center;
 }
 .app-bottom .tasks-box {
   display: -webkit-box;
@@ -233,4 +226,12 @@ h1 {
 .completed {
   text-decoration: line-through;
   font-style: italic;
+}
+
+.error {
+  opacity: 0;
+  letter-spacing: 1px;
+  color: red;
+  margin: 10px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
